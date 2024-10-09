@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        border: 1px solid lightgray;
+        padding: 20px;
+        margin: 20px;
+    }
+</style>
+
+<body>
+
+    <div id="container" class="container">
+        <p>Paragrafo dentro da div</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <script>
+        // Clonando elemento
+        let divContainerClone = document.querySelector('#container').cloneNode(true);
+
+        // Inserindo o clone após o container original
+        document.querySelector('#container').after(divContainerClone);
+
+        // Removendo elemento
+        document.querySelectorAll('#container > ul > li')[1].remove()
+
+    </script>
+</body>
+
+</html>
