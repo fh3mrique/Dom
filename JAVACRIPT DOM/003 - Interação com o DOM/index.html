@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Conteudo HTML</p>
+
+    <script>
+        /*
+        O DOM permite-nos fazer todo tipo de interação com seus elementos
+        e respecttivo conteúdo. No entando, primeiro precisamos "chegar" ao
+        elemento que desejamos selecionar
+
+        <html> corresponde = document.documentElement
+        <body> corresponde = document.body
+        <head> corresponde = document.head
+        */
+    </script>
+
+    <script>
+        console.log(document.body.childNodes);
+        document.body.childNodes[1].innerText = "Novo texto do paragrafo";
+        document.body.childNodes[1].textContent = "Novo texto do paragrafo 2";
+    </script>
+    
+</body>
+</html>
