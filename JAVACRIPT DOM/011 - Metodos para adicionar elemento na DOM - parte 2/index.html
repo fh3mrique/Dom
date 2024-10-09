@@ -29,11 +29,18 @@
     <script>
         let divContainer = document.querySelector('.container');
 
-        //insertAdjacentText
-        divContainer.insertAdjacentText('beforebegin', 'AAAA');
-        divContainer.insertAdjacentText('afterbegin', 'BBBB');
-        divContainer.insertAdjacentText('beforeend', 'BBBB');
-        divContainer.insertAdjacentText('afterend', 'BBBB');
+        //Vamos adicionar texto antes do container
+        divContainer.before('Antes com container com before');
+
+        //Vamos adicionar texto dentro do container, mas no inicio
+        divContainer.prepend('Dentro do container, mas no inicio com pretend');
+
+        //Vamos adicionar texto dentro do container, mas no final
+        divContainer.append('Dentro do container, mas no final com append');
+
+        //Vamos adicionar texto antes do container
+        divContainer.after('Antes com container com before');
+
     </script>
 </body>
 
