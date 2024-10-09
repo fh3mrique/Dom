@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .noticias {
+        font-family: 'Courier New', Courier, monospace;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 50px;
+        width: 400px;
+    }
+
+</style>
+<body>
+    <div class="noticias">
+        <h1>Titulo da notícia</h1>
+        <h3 id="sumario">Sumário da notícia</h3>
+        <img src="./news-img.jpg" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, fugit repellat deserunt iste soluta, eos dolore laborum eligendi beatae omnis impedit possimus recusandae ratione qui enim accusantium, aliquid maxime suscipit.</p>
+    </div>
+    
+    <script>
+        let elemento = document.querySelector('h3');
+
+        // hasAttribute
+        if (elemento.hasAttribute('id')){
+            alert('O Sumario tem id')
+        }
+
+        // getAttribute
+        console.log(elemento.getAttribute('id'));
+
+        //setAttribute
+        elemento.setAttribute('title', 'TITULO DO SUMARIO');
+
+        // removeAttribute
+        let img = document.querySelector('img');
+        //img.removeAttribute('src');
+
+        //todos os atributos de uma tag
+        console.log('Atributos da tag de Imagem', img.attributes);
+    </script>
+</body>
+</html>
