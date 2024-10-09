@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 1px solid lightblue;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        p {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        Dentro do DIV
+    </div>
+
+    <script>
+        let divContainer = document.querySelector('.container');
+
+        //Vamos adicionar texto antes do container
+        divContainer.before('Antes com container com before');
+
+        //Vamos adicionar texto dentro do container, mas no inicio
+        divContainer.prepend('Dentro do container, mas no inicio com pretend');
+
+        //Vamos adicionar texto dentro do container, mas no final
+        divContainer.append('Dentro do container, mas no final com append');
+
+        //Vamos adicionar texto antes do container
+        divContainer.after('Antes com container com before');
+
+    </script>
+</body>
+
+</html>
