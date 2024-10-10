@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        margin: 50px auto;
+        background-color: lightblue;
+        overflow: auto;
+    }
+</style>
+<body>
+    <div>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab exercitationem repellat quibusdam ipsum doloribus quaerat accusantium commodi odio nisi maiores soluta dolore quasi, quae cum iure, illo, tempore laboriosam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam excepturi quae temporibus? Placeat animi aperiam ipsum est, enim tenetur quo consectetur doloribus, ratione dignissimos omnis. Ullam neque molestias placeat!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur blanditiis ipsam porro molestias nisi repudiandae inventore praesentium sint corrupti maxime tenetur sunt, aliquam quas ea officiis mollitia quisquam. Sunt, impedit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quas ex pariatur facilis ipsam nemo iure repellendus dolore officiis sunt voluptates ullam, voluptatum dicta id ab, perspiciatis ratione voluptatem dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores quos iusto totam, ducimus ea aliquid officiis animi expedita sapiente quisquam eos doloremque. Iure reiciendis ea dolorum accusamus, voluptatibus molestias?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam voluptates quis est nulla eaque vero magnam eveniet inventore quasi, ratione odit sit illo odio consectetur exercitationem, enim distinctio optio maiores.
+    </div>
+
+    <p id="propriedades"></p>
+    <button onclick="buscar_propriedades()">Executar</button>
+
+    <script>
+        const buscar_propriedades = () => {
+            let div = document.querySelector('div');
+            let p = document.querySelector('#propriedades');
+
+            let resultados = '';
+            resultados += 'offsetLeft = ' + div.offsetLeft + '';
+            resultados += 'offsetTop = ' + div.offsetTop + '';
+            resultados += 'offsetWidth = ' + div.offsetWidth + '';
+            resultados += 'offsetHeight = ' + div.offsetHeight + '';
+
+            p.textContent = resultados;
+
+        }
+    </script>
+</body>
+</html>
