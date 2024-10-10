@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p-1 {
+            background-color: lightgreen;
+        }
+
+        .p-2 {
+
+            background-color: lightcoral;
+        }
+
+        .p-3 {
+
+            background-color: lightseagreen;
+        }
+
+        .espaco {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat id natus iusto, aliquam ratione laudantium
+        praesentium, officia necessitatibus voluptates nobis error nihil nisi eum quia odio libero dignissimos tempora!
+    </p>
+
+
+    <script>
+
+        //Classname é uma propriedade que permite ler e alterar as classes do elemento
+        let paragrafo = document.querySelector('p');
+        paragrafo.className = 'p-2 espaco'
+
+
+        //ClassList
+        paragrafo.classList.add('p-3');
+        paragrafo.classList.add('espaco');
+        paragrafo.classList.toggle('p-3')
+    </script>
+
+</body>
+
+</html>
