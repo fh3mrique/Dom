@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p-1 {
+            background-color: lightgreen;
+            color: black;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat id natus iusto, aliquam ratione laudantium
+        praesentium, officia necessitatibus voluptates nobis error nihil nisi eum quia odio libero dignissimos tempora!
+    </p>
+
+
+    <script>
+        let paragrafo = document.querySelector('p');
+       
+        paragrafo.style.backgroundColor = 'red';
+        paragrafo.style.padding = '30px';
+        paragrafo.style.cssText = 'background-color: blue;'
+    </script>
+
+</body>
+
+</html>
